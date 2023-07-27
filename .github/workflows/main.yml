@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag ecom_ui:$(date +%s)
+      run: docker build . --file Dockerfile --tag ecom_api_gateway:$(date +%s)
     
     - name: Login to Docker Hub
       uses: docker/login-action@v2
@@ -24,4 +24,4 @@ jobs:
       uses: docker/build-push-action@v4
       with:
        push: true
-       tags: shubhamborkar/gcp_ecom_api_gateway:1.0
+       tags: shubhamborkar/ecom_api_gateway:1.0
