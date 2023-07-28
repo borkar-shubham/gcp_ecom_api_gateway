@@ -21,12 +21,12 @@ zuul:
     cart:
       path: /cart/**
       url: http://34.16.144.68:1004/api/v1
-    shoe-service:
-      path: /shoeapi/**
-      serviceId: shoe-client
-    offer-service:
-      path: /offerapi/**
-      serviceId: offers-client
-    cart-service:
-      path: /cartapi/**
-      serviceId: cart-client
+    # shoe-service:
+    #   path: /shoeapi/**
+    #   serviceId: shoe-client
+    # offer-service:
+    #   path: /offerapi/**
+    #   serviceId: offers-client
+    # cart-service:
+    #   path: /cartapi/**
+    #   serviceId: cart-client
