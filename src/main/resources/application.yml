@@ -6,21 +6,21 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://34.16.144.68:8761/eureka/
 zuul:
   routes:
     offer:
       path: /offer/**
-      url: http://localhost:1001/api/v1
+      url: http://34.16.144.68:1001/api/v1
     shoe:
       path: /shoe/**
-      url: http://localhost:1002/api/v1
+      url: http://34.16.144.68:1002/api/v1
     wishlist:
       path: /wishlist/**
-      url: http://localhost:1003
+      url: http://34.16.144.68:1003
     cart:
       path: /cart/**
-      url: http://localhost:1004/api/v1
+      url: http://34.16.144.68:1004/api/v1
     shoe-service:
       path: /shoeapi/**
       serviceId: shoe-client
